@@ -8,6 +8,7 @@ export default function Blogs() {
 
   useEffect(() => {
     fetchBlogs();
+    window.scrollTo(0, 0);
   }, []);
 
   const fetchBlogs = async () => {

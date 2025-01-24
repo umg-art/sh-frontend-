@@ -135,7 +135,13 @@ p.card-text {
     height: 40vh !important;
     
   }
-  
+  .drdo-customer {
+    width: 300px !important;
+    margin-top: 50px;
+    height: 139px !important;
+    object-fit: contain !important;
+}
+
   .collapsed-paragraph {
     max-height: 378px;
     overflow: hidden;
@@ -159,6 +165,14 @@ p.card-text {
   .mission-vission p {
     width: 500px;
   }
+  .drdo-customer {
+    width: 324px !important;
+    margin-top: 61px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 177px !important;
+    object-fit: contain !important;
+}
 }
 
 @media (min-width: 681px) and (max-width: 1024px) {
@@ -169,6 +183,14 @@ p.card-text {
   .onion-mission {
     height: 55vh !important;
   }
+  .drdo-customer {
+    width: 324px !important;
+    margin-top: 61px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 177px !important;
+    object-fit: contain !important;
+}
 }
 
 @media (max-width: 991.98px) {
@@ -724,13 +746,6 @@ p.card-text {
   height: 75px;
   object-fit: scale-down;
   align-items: center;
-}
-.drdo-customer {
-  width: 342px !important;
-  margin-top: 61px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  height: 177px !important;
-  object-fit: contain !important;
 }
 
 .our-partner-slider .slick-initialized .slick-slide {
@@ -1770,6 +1785,14 @@ section.sid-section.our-product h4 {
   flex: 2;
 }
 
+.image-slider-with-animation .content:hover .marg-bott {
+  margin-bottom: 0;
+  font-size: 25px;
+}
+.image-slider-with-animation .content:hover .mapvyuh {
+  margin-top: 50px;
+}
+
 .image-slider-with-animation .radio:hover + .content > .card-title {
   opacity: 1;
   transform: translateX(0);
@@ -1888,7 +1911,7 @@ section.sid-section.our-product h4 {
   margin-bottom: 40px;
 }
 .about-suhora-section .team-card .card img {
-  border-radius: 0;
+  border-radius: 10px;
 }
 .about-suhora-section .team-card .card .card-body {
   display: flex;
@@ -2383,7 +2406,7 @@ section.sid-section.our-product h4 {
   }
   .image-slider-with-animation .radio:hover + .content > .title-card {
     bottom: initial;
-    top: 19px;
+    top: 20px;
   }
   .image-slider-with-animation .title-card {
     bottom: 0;

@@ -41,7 +41,7 @@ function Footer() {
             <div className="col-lg-2 col-md-5 menu-item">
               <h5 className="text-light mb-4">Company</h5>
               <Link to="/about-us">About Us</Link>
-              <Link to="/career">Career</Link>
+              <Link to="/career">Careers</Link>
               <Link to="/event-news">Events & News</Link>
               {/* <Link to="/">Blogs</Link>
               <Link to="/">Our Team</Link>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { baseUrl } from "../../base";
@@ -7,6 +7,10 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 
 function DefenceIntelligence() {
   const $ = jQuery.noConflict();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -391,7 +395,7 @@ function DefenceIntelligence() {
               <label className="content" htmlFor="cardTres">
                 <div className="overlay" />
                 <h1 className="title-card">
-                  <span className="marg-bott">MapVyuh</span>
+                  <span className="marg-bott mapvyuh">MapVyuh</span>
                 </h1>
                 <h3 className="card-title subsubtitle">
                   <span>
