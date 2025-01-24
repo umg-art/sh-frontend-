@@ -131,7 +131,7 @@ export default function Career() {
             <h3>CAREERS @ SUHORA</h3>
             <p>
               Embrace each new opportunity as a stepping stone towards <br />{" "}
-              your professional growth and fulfilment
+              your professional growth and fulfilment.
             </p>
           </div>
         </div>
@@ -276,7 +276,7 @@ export default function Career() {
                   </div>
                 ))
               ) : (
-                <p>There are no current opening found.</p>
+                <p>No current openings were found.</p>
               )}
               {/* // the job modal showing  */}
               {isModalOpen && selectedJob && (

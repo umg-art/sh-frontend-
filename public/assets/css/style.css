@@ -107,6 +107,12 @@ p.card-text {
   font-weight: 500;
   outline: none;
 }
+.show-more {
+  display: none;
+  width: 110px;
+  height: 40px;
+  color: rgb(0, 130, 216);
+ }
 
 .fixed-top.navbar .navbar-nav .nav-link:hover,
 .fixed-top.navbar .navbar-nav .nav-link.active {
@@ -120,6 +126,24 @@ p.card-text {
   display: none !important;
 }
 @media (min-width: 320px) and (max-width: 680px) {
+  .about-suhora-section .team-card {
+    padding-bottom: 0 !important;
+  }
+  .gallery-section-ourteam {
+    max-width: 1230px;
+    min-height: 0 !important;
+    height: 40vh !important;
+    
+  }
+  
+  .collapsed-paragraph {
+    max-height: 378px;
+    overflow: hidden;
+   }
+   .show-more {
+    display: block !important;
+   }
+  
   .nav-mobile-item {
     display: block !important;
   }
@@ -1479,7 +1503,7 @@ button.custom-btn:hover {
   border-radius: 15px;
   color: #fff;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 0;
   width: 100%;
 }
 
@@ -1545,7 +1569,7 @@ section.sid-section.our-product h4 {
   border-radius: 15px;
   color: #fff;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 0;
 }
 .key-beneficiaries-carousel .slick-arrow,
 .bg-image-with-right-slider .slick-arrow {
@@ -2359,7 +2383,7 @@ section.sid-section.our-product h4 {
   }
   .image-slider-with-animation .radio:hover + .content > .title-card {
     bottom: initial;
-    top: 70px;
+    top: 19px;
   }
   .image-slider-with-animation .title-card {
     bottom: 0;

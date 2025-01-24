@@ -236,7 +236,7 @@ function DefenceIntelligence() {
 
           <div className="row card-image-col">
             <h4>
-              With <span>MIRKA </span> gain actionable Intelligence
+              With <span>MIRKA </span> gain actionable intelligence
             </h4>
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">

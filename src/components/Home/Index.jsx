@@ -700,14 +700,8 @@ function HomePage() {
                 </div>
                 <div className="testimonial-item text-center">
                   <img
-                    className="img-fluid p-2 mx-auto"
-                    src="./assets/images/usdma-customer5.png"
-                  />
-                </div>
-                <div className="testimonial-item text-center">
-                  <img
                     className="img-fluid p-2 mx-auto drdo-customer"
-                    src="./assets/images/drdo-cutomer-11.jpeg"
+                    src="./assets/images/drd-logo.jpg"
                   />
                 </div>
                 <div className="testimonial-item text-center">

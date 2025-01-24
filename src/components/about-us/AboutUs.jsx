@@ -6,7 +6,12 @@ export default function AboutUs() {
   const $ = jQuery.noConflict();
 
   const [data, setData] = useState([]);
+  const [isExpanded, setIsExpanded] = useState(false);
 
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+  
   useEffect(() => {
     fetch();
   }, []);
@@ -212,21 +217,30 @@ export default function AboutUs() {
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
-                        <p className="card-text">
-                          The world today is both challenging and exciting.
-                          Throughout history, humanity has thrived through
-                          innovation and perseverance. This continues today,
-                          even amidst economic fluctuations and conflicts.
-                          Despite these ups and downs, we are moving towards
-                          progress.
-                          <br />
-                          At Suhora, we believe innovation is the cornerstone of
-                          this progress. Technology-driven efficiency allows us
-                          to keep pushing boundaries, crossing new frontiers,
-                          and solving new problems. Together, we are shaping a
-                          future where challenges become opportunities, and
-                          progress is an unstoppable force.
-                        </p>
+                        <p
+                            className={`card-text ${isExpanded ? "" : "collapsed-paragraph"}`}
+                          >
+                            The world today is both challenging and exciting.
+                            Throughout history, humanity has thrived through
+                            innovation and perseverance. This continues today,
+                            even amidst economic fluctuations and conflicts.
+                            Despite these ups and downs, we are moving towards
+                            progress.
+                            <br />
+                            At Suhora, we believe innovation is the cornerstone of
+                            this progress. Technology-driven efficiency allows us
+                            to keep pushing boundaries, crossing new frontiers,
+                            and solving new problems. Together, we are shaping a
+                            future where challenges become opportunities, and
+                            progress is an unstoppable force.
+                          </p>
+                          <div
+                              onClick={toggleExpand}
+                              className="btn btn-link show-more"
+                              style={{ textDecoration: "none", color: "#007bff" }}
+                            >
+                              {isExpanded ? "Show Less" : "Show More"}
+                            </div>
                       </div>
                     </div>
                   </div>
@@ -262,7 +276,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-          <div className="row team-card">
+          <div className="row team-card container">
             <div className="our-team">
               <h3 className="text-center title">Our Team</h3>
               <p className="text-center">

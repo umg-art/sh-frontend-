@@ -2,6 +2,7 @@ import { useEffect , useState} from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { baseUrl } from "../../base";
+import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
 function DisasterInsurance() {
   const $ = jQuery.noConflict();
@@ -189,12 +190,12 @@ function DisasterInsurance() {
         ],
       });
 
-    const container = document.querySelector(".image-col .container");
-    document
-      .querySelector(".image-col .slider")
-      .addEventListener("input", (e) => {
-        container.style.setProperty("--position", `${e.target.value}%`);
-      });
+    // const container = document.querySelector(".image-col .container");
+    // document
+    //   .querySelector(".image-col .slider")
+    //   .addEventListener("input", (e) => {
+    //     container.style.setProperty("--position", `${e.target.value}%`);
+    //   });
 
     initializeCarousel();
     window.scrollTo(0, 0);
@@ -254,7 +255,11 @@ function DisasterInsurance() {
             </div>
             <div className="col-lg-6">
               <div className="image-col">
-                <main>
+              <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage src="./assets/images/Disaster_slider1.webp" srcSet="./assets/images/Disaster_slider1.webp" alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="../assets/images/Disaster_slider2.webp" srcSet="./assets/images/Disaster_slider2.webp" alt="Image two" />}
+              />
+                {/* <main>
                   <div className="container">
                     <div className="image-container product-slider">
                       <img
@@ -268,7 +273,6 @@ function DisasterInsurance() {
                         alt="Disaster_slider2"
                       />
                     </div>
-                    {/* step="10" */}
                     <input
                       type="range"
                       min={0}
@@ -339,7 +343,7 @@ function DisasterInsurance() {
                       </svg>
                     </div>
                   </div>
-                </main>
+                </main> */}
               </div>
             </div>
           </div>

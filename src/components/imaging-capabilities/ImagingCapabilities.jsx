@@ -1,19 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 function ImagingCapabilities() {
-  const $ = jQuery.noConflict();
-
-  useEffect(() => {
-    const container = document.querySelector(".image-col .container");
-    document
-      .querySelector(".image-col .slider")
-      .addEventListener("input", (e) => {
-        container.style.setProperty("--position", `${e.target.value}%`);
-      });
-    window.scrollTo(0, 0);
-  }, [$]);
-
   return (
     <>
       {/* Carousel Start */}
@@ -43,8 +31,6 @@ function ImagingCapabilities() {
         </div>
       </section>
 
-      {/* Carousel End */}
-      {/*SID Section -*/}
       <section className="sid-section our-product">
         <div className="container">
           <div className="row sid-col g-0 equal">
@@ -57,100 +43,18 @@ function ImagingCapabilities() {
                 Experience the next level data insight and analytics with our
                 SaaS platform, delivering unparalleled convenience and
                 efficiency. SPADE, a subscription based platform revamps
-                satelite tasking, data access, and analysis, harnessing the
-                capabilities of 15+ satelite constellation equipped with 250+
+                satellite tasking, data access, and analysis, harnessing the
+                capabilities of 15+ satellite constellation equipped with 250+
                 sensors. With guaranteed collection, fastest tasking, and secure
                 downlink capabilities, your data is handled with utmost precision and confidentiality.{" "}
               </p>
             </div>
             <div className="col-lg-6">
-              <div className="image-col">
-                <main>
-                  <div className="container">
-                    <div className="image-container product-slider">
-                      <img
-                        className="diaster-image-before slider-image"
-                        src="./assets/images/Spade_Slider1.webp"
-                        alt="color photo"
-                      />
-                      <img
-                        className="image-after slider-image"
-                        src="./assets/images/Spade_Slider2.webp"
-                        alt="black and white"
-                      />
-                    </div>
-                    {/* step="10" */}
-                    <input
-                      type="range"
-                      min={0}
-                      max={100}
-                      defaultValue={50}
-                      aria-label="Percentage of before photo shown"
-                      className="slider"
-                    />
-                    <div className="slider-line" aria-hidden="true" />
-                    <div className="slider-button" aria-hidden="true">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={30}
-                        height={30}
-                        fill="currentColor"
-                        viewBox="0 0 256 256"
-                      >
-                        <rect width={256} height={256} fill="none" />
-                        <line
-                          x1={128}
-                          y1={40}
-                          x2={128}
-                          y2={216}
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={16}
-                        />
-                        <line
-                          x1={96}
-                          y1={128}
-                          x2={16}
-                          y2={128}
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={16}
-                        />
-                        <polyline
-                          points="48 160 16 128 48 96"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={16}
-                        />
-                        <line
-                          x1={160}
-                          y1={128}
-                          x2={240}
-                          y2={128}
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={16}
-                        />
-                        <polyline
-                          points="208 96 240 128 208 160"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={16}
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </main>
+              <div className="image-col h-100">
+              <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage src="./assets/images/Spade_Slider1.webp" srcSet="./assets/images/Spade_Slider1.webp" alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="./assets/images/Spade_Slider2.webp" srcSet="./assets/images/Spade_Slider2.webp" alt="Image two" />}
+             />
               </div>
             </div>
           </div>
@@ -263,7 +167,7 @@ function ImagingCapabilities() {
           <div className="row">
             <div className="col-lg-7 text-center m-auto title-col">
               <h3>
-                Your comprehensive hub for Satelite Imagery and Analytics
+                Your comprehensive hub for Satellite Imagery and Analytics
                 Solutions{" "}
               </h3>
               <p>Just spade the data you need</p>
