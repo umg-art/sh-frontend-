@@ -146,7 +146,7 @@ function DefenceIntelligence() {
             <div className="col-lg-6">
               <div className="image-col h-100">
               <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage style={{filter:"grayscale(100%)"}} className="" src="./assets/images/mirka-slider.webp" srcSet="./assets/images/mirka-slider.webp" alt="Image one" />}
+                itemOne={<ReactCompareSliderImage src="./assets/images/Picture1-mirka-slider.jpg" srcSet="./assets/images/Picture1-mirka-slider.jpg" alt="Image one" />}
                 itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider.webp" srcSet="./assets/images/mirka-slider.webp" alt="Image two" />}
              />
                 {/* <main className="h-100">

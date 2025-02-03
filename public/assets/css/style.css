@@ -125,9 +125,16 @@ p.card-text {
 .nav-mobile-item {
   display: none !important;
 }
+.image-slider-with-animation .content:hover .mapvyuh {
+  margin-top: 0px;
+}
 @media (min-width: 320px) and (max-width: 680px) {
   .about-suhora-section .team-card {
     padding-bottom: 0 !important;
+  }
+  .image-slider-with-animation .content:hover .marg-bott {
+    margin-bottom: 0;
+    font-size: 25px;
   }
   .gallery-section-ourteam {
     max-width: 1230px;
@@ -135,9 +142,14 @@ p.card-text {
     height: 40vh !important;
     
   }
-  .drdo-customer {
-    width: 300px !important;
+  .image-slider-with-animation .content:hover .mapvyuh {
     margin-top: 50px;
+  }
+  .drdo-customer {
+    width: 283px !important;
+    margin-top: 52px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 139px !important;
     object-fit: contain !important;
 }
@@ -165,9 +177,15 @@ p.card-text {
   .mission-vission p {
     width: 500px;
   }
+  #whySuhora {
+     top:80px !important;
+  }
+  .image-slider-with-animation .content .mapvyuh-title {
+   min-height: 89px;
+  }
   .drdo-customer {
-    width: 324px !important;
-    margin-top: 61px;
+    width: 320px !important;
+    margin-top: 63px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 177px !important;
@@ -283,6 +301,10 @@ p.card-text {
 .carousel-control-next {
   width: 15%;
 }
+.form-main-wrapper .form-btn {
+  border: 1px solid #006b83;
+  color: #006b83;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -329,10 +351,16 @@ p.card-text {
     max-height: 570px !important;
   }
   .home-text {
-    font-size: 30px !important;
+    font-size: 25px !important;
+  }
+  .logo-header img {
+    height: 65px;
+ }
+  .home-sub-text {
+    font-size: 18px !important;
   }
   .testimonial-section .testimonial-content .testimonial-text p {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .sub-top-video-banner .container .d-flex {
     align-items: center !important;
@@ -367,7 +395,9 @@ p.card-text {
     url(../img/carousel-1.jpg) center center no-repeat;
   background-size: cover;
 }
-
+.logo-header img {
+   height: 60px;
+}
 .page-header .breadcrumb-item + .breadcrumb-item::before {
   color: #999999;
 }
@@ -576,7 +606,7 @@ p.card-text {
 }
 #whySuhora {
   position: sticky;
-  top: 90px;
+  top: 80px;
   z-index: 1029;
   background: linear-gradient(
     to right,
@@ -1038,6 +1068,19 @@ footer .footer-sec .address p {
   .event-news-section .title {
     padding-top: 20px;
   }
+  .testimonial-section {
+  height: 120vh !important;
+  }
+  .testimonial-section .testimonial-carousel {
+    margin-top: 100px;
+  }
+  .why-us .why-us-title {
+    font-size: 30px !important;
+  }
+  #whySuhora {
+    top: 80px !important;
+  }
+
 }
 .blog-section .card-col,
 .event-news-section .card-col {
@@ -1786,7 +1829,7 @@ section.sid-section.our-product h4 {
 }
 
 .image-slider-with-animation .content:hover .marg-bott {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   font-size: 25px;
 }
 .image-slider-with-animation .content:hover .mapvyuh {
@@ -2038,7 +2081,7 @@ section.sid-section.our-product h4 {
 /* imaging capabilities Page*/
 .sid-section .card-image-col .card .card-body {
   position: absolute;
-  height: 50px;
+  height: 45px;
   width: 100%;
   bottom: 0;
   overflow: hidden;
