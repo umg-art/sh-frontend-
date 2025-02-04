@@ -146,8 +146,8 @@ function DefenceIntelligence() {
             <div className="col-lg-6">
               <div className="image-col h-100">
               <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src="./assets/images/mirka-final01.jpg" srcSet="./assets/images/mirka-final01.jpg" alt="Image one" />}
-                itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider-02.jpg" srcSet="./assets/images/mirka-slider-02.jpg" alt="Image two" />}
+                itemOne={<ReactCompareSliderImage src="./assets/images/mirka-slider01.webp" srcSet="./assets/images/mirka-slider01.webp" alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="./assets/images/mirka-slider02.webp" srcSet="./assets/images/mirka-slider02.webp" alt="Image two" />}
              />
                 {/* <main className="h-100">
                   <div className="container h-100">
