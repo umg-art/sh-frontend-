@@ -288,7 +288,7 @@ function HomePage() {
           loop="loop"
         >
           <source
-            src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4"
+            src="./assets/images/landing-video-02.mp4"
             type="video/mp4"
           />
         </video>
