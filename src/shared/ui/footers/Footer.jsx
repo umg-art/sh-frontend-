@@ -50,16 +50,16 @@ function Footer() {
           </div>
           <div className="row">
             <div className="d-flex pt-2 gap-3 pb-4 social-icon">
-              <a className="btn btn-square me-1" href="https://x.com/suhoratech">
+              <a className="btn btn-square me-1" target="_blank" href="https://x.com/suhoratech">
                 <i className="fab fa-twitter" />
               </a>
-              <a className="btn btn-square me-1" href="https://www.facebook.com/suhoratech">
+              <a className="btn btn-square me-1" target="_blank" href="https://www.facebook.com/suhoratech">
                 <i className="fab fa-facebook-f" />
               </a>
-              <a className="btn btn-square me-1" href="https://www.youtube.com/@suhora">
+              <a className="btn btn-square me-1" target="_blank" href="https://www.youtube.com/@suhora">
                 <i className="fab fa-youtube" />
               </a>
-              <a className="btn btn-square me-0" href="https://www.linkedin.com/company/suhora">
+              <a className="btn btn-square me-0" target="_blank" href="https://www.linkedin.com/company/suhora">
                 <i className="fab fa-linkedin-in" />
               </a>
             </div>

@@ -120,20 +120,14 @@ export default function AboutUs() {
            <div>
               <h1>Our Mission</h1>
               <p>
-                Our Mission is to harness the power of satellite imagery
-                and  advanced data analytics to deliver timely, accurate, 
-                and actionable insights for businesses, governments,
-                and organizations worldwide.
+              Transforming global surveillance with space analytics to predict and solve critical security and environmental challenges.
               </p>
            </div>
            <hr />
            <div>
               <h1>Our Vision</h1>
               <p>
-                we envision a world  where satellite insights illuminate
-                every corner of the planet, empowering humanity to
-                make  smarter, more sustainable decisions. By providing
-                unprecedented access to critical data from space.
+              Shaping a future where Space and Technology work together to protect and nurture human life.
               </p>
            </div>
          </div>
