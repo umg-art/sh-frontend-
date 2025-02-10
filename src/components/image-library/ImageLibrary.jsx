@@ -203,16 +203,16 @@ export default function ImageLibrary() {
                     <a
                       href="./assets/images/mandla_port.webp"
                       data-fancybox="gallery"
-                      data-caption="Mandla port Assam 50 Centimeters"
+                      data-caption="Mundra port Assam 50 Centimeters"
                     >
                       <img
                         src="./assets/images/mandla_port.webp"
-                        alt="Mandla port Assam 50 Centimeters"
+                        alt="Mundra port Assam 50 Centimeters"
                       />
                     </a>
                   </div>
                   <div className="card-detial">
-                    <p>Mandla port</p>
+                    <p>Mundra port</p>
                     <span>50 Centimeters</span>
                   </div>
                 </div>
