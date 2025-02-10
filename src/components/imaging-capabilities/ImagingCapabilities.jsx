@@ -180,7 +180,7 @@ function ImagingCapabilities() {
           <div className="row solution-hub-card">
             <div className="col-lg-3 col-md-6 mt-3">
               <div className="card">
-                <Link to="/image-library">
+                <a href="/image-library#optical_catalog">
                   <img
                     src="./assets/images/Optical_thumbnail.webp"
                     className="card-img-top"
@@ -189,12 +189,12 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">Optical</h5>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mt-3">
               <div className="card">
-                <Link to="/image-library">
+                <a href="/image-library#sar_catalog">
                   <img
                     src="./assets/images/SAR_thumbnail.webp"
                     className="card-img-top"
@@ -203,12 +203,12 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">SAR</h5>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mt-3">
               <div className="card">
-                <Link to="/image-library">
+                <a href="/image-library#thermal_catalog">
                   <img
                     src="./assets/images/Thermal_thumbnail.webp"
                     className="card-img-top"
@@ -217,12 +217,12 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">Thermal</h5>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mt-3">
               <div className="card">
-                <Link to="/image-library">
+                <a href="/image-library#dsm_dtm_catalog">
                   <img
                     src="./assets/images/DSM-DTM_thumbnail.webp"
                     className="card-img-top"
@@ -231,7 +231,7 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">Elevation Data</h5>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
