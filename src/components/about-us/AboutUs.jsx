@@ -402,6 +402,27 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
+            <div className="col-lg-4 col-md-6 mb-3">
+              <div className="card">
+                <img
+                  src="./assets/images/Anshuman.webp"
+                  style={{ filter: "grayscale(1)" }} 
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <div className="about-founder">
+                    <h5 className="card-title">Anshuman Narang</h5>
+                    <p className="card-text">Advisor</p>
+                  </div>
+                  <div className="social-icon">
+                    <a target="_blank" href="https://www.linkedin.com/in/anshuman-narang-19892126b/">
+                      <img src="./assets/images/LinkedIn.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="row gallery-section gallery-section-ourteam">
